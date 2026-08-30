@@ -1,7 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T19:22:00+02:00",
+  "updatedAt": "2026-08-30T20:25:00+02:00",
   "rounds": [
+    {
+      "id": "2026-08-28-alboran",
+      "date": "2026-08-28",
+      "course": "Alborán Golf",
+      "location": "El Toyo, Almería",
+      "format": "Medal",
+      "tees": "Amarillas",
+      "par": 72,
+      "score": 102,
+      "front": 50,
+      "back": 52,
+      "toPar": 30,
+      "net": 77,
+      "netToPar": 5,
+      "stableford": 35,
+      "putts": 34,
+      "penalties": 5,
+      "handicap": 23.4,
+      "playingHandicap": 25,
+      "position": 2,
+      "result": "102 bruto · 77 neto · 35 Stableford",
+      "players": [
+        "Pedro Ruiz Otero",
+        "Aníbal García"
+      ],
+      "summary": "Vuelta de montaña rusa, con cinco penalizaciones pero también golpes de gran nivel: birdie en el 5, tramo sólido del 10 al 12 y grandes recuperaciones en la segunda vuelta.",
+      "path": "2026-08-28/"
+    },
     {
       "id": "2026-08-29-alboran",
       "date": "2026-08-29",
