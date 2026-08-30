@@ -1,7 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T18:30:00+02:00",
+  "updatedAt": "2026-08-30T19:25:00+02:00",
   "rounds": [
+    {
+      "id": "2026-08-29-alboran",
+      "date": "2026-08-29",
+      "course": "Alborán Golf",
+      "location": "El Toyo, Almería",
+      "format": "Partida amistosa",
+      "tees": "Amarillas",
+      "par": 72,
+      "score": 100,
+      "front": 51,
+      "back": 49,
+      "toPar": 28,
+      "putts": 36,
+      "handicap": 23.4,
+      "result": "Birdie en el hoyo 17",
+      "players": [
+        "Miguel Castro Ariza",
+        "Juan Guirado",
+        "Aníbal García"
+      ],
+      "summary": "Partida con altibajos: juego irregular, pero sin grandes desastres y con birdie en el hoyo 17.",
+      "path": "2026-08-29/"
+    },
     {
       "id": "2026-08-30-alboran",
       "date": "2026-08-30",

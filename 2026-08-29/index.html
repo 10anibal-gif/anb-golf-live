@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Alborán · 29/08/2026 · ANB Golf</title>
+<style>
+:root{--bg:#0b1220;--panel:#121c2e;--panel2:#18243a;--text:#f4f7fb;--muted:#9fb0c8;--line:#263650;--good:#3ddc97;--bad:#ff6b6b;--neutral:#f7c85b;--accent:#6aa8ff}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#09111d,#0d1726 45%,#0a1320);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.wrap{max-width:980px;margin:auto;padding:16px 14px 42px}.back{display:inline-flex;color:#bcd0ea;text-decoration:none;margin:3px 0 13px}.hero{background:linear-gradient(135deg,#17243b,#184f6a);border:1px solid #2c4767;border-radius:22px;padding:20px;box-shadow:0 12px 35px #0006}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#bcd0ea}h1{margin:7px 0 4px;font-size:28px}.sub{color:#c9d8ea;font-size:14px;line-height:1.5}.badge{display:inline-block;margin-top:12px;padding:7px 11px;border-radius:999px;background:#3f3516;border:1px solid #8a7330;font-weight:700}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}.metric{background:#0c1625aa;border:1px solid #29415f;border-radius:16px;padding:12px;text-align:center}.metric b{font-size:23px;display:block}.metric span{font-size:11px;color:var(--muted)}.section{margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:15px}.section h2{font-size:16px;margin:0 0 12px}.card-meta{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 14px}.card-meta span{border:1px solid #2a3b55;border-radius:999px;padding:6px 9px;font-size:11px;color:#cbd8ea}.scoregrid{display:grid;grid-template-columns:repeat(9,1fr);gap:7px}.holebtn{border:1px solid #334967;background:#111d30;color:white;border-radius:12px;padding:9px 2px;cursor:pointer}.holebtn.active{outline:2px solid var(--accent);background:#193051}.holebtn .n{font-size:12px;line-height:1.25;color:var(--muted)}.holebtn .s{display:flex;align-items:center;justify-content:center;min-height:42px}.shape{position:relative;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;font-size:19px;font-weight:800}.birdie{border:2px solid currentColor;border-radius:50%}.bogey,.double{border:2px solid currentColor}.double:after{content:"";position:absolute;inset:4px;border:2px solid currentColor}.over{width:30px;height:30px;background:currentColor;transform:rotate(45deg);border-radius:2px}.over em{font-style:normal;transform:rotate(-45deg);color:#0b1220}.detail{margin-top:14px;background:var(--panel2);border-radius:16px;padding:14px}.detailtop{display:flex;justify-content:space-between;gap:10px;align-items:center}.detailtop h3{margin:0;font-size:20px}.scorepill{padding:6px 10px;border-radius:999px;background:#213653;font-weight:800}.shot{display:grid;grid-template-columns:42px 84px 1fr;gap:8px;align-items:start;padding:10px 0;border-top:1px solid #2a3a54}.shot:first-child{border-top:0}.idx{color:var(--muted)}.club{font-weight:800}.q-good{color:var(--good)}.q-bad{color:var(--bad)}.q-neutral{color:var(--neutral)}.empty{color:#c6d2e2;padding:16px 0;line-height:1.5}.note{padding:11px 12px;background:#0f1b2c;border-left:4px solid var(--accent);border-radius:10px;margin:9px 0;color:#dfe9f7;line-height:1.45}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.footer{text-align:center;color:#7f93ad;font-size:12px;margin-top:18px}@media(max-width:700px){.metrics{grid-template-columns:repeat(2,1fr)}.scoregrid{grid-template-columns:repeat(6,1fr)}.two{grid-template-columns:1fr}.detailtop{align-items:flex-start;flex-direction:column}.shot{grid-template-columns:30px 70px 1fr}}
+</style>
+</head>
+<body><div class="wrap">
+<a class="back" href="../">← Histórico de partidas</a>
+<div class="hero">
+  <div class="eyebrow">ANB Apps · Golf Live</div>
+  <h1>Alborán · 29/08/2026</h1>
+  <div class="sub">Aníbal García · Miguel Castro Ariza · Juan Guirado se incorporó durante la vuelta</div>
+  <div class="badge">⛳ Vuelta de altibajos, dentro del hándicap</div>
+  <div class="metrics">
+    <div class="metric"><b>100</b><span>Golpes</span></div>
+    <div class="metric"><b>51/49</b><span>1ª / 2ª vuelta</span></div>
+    <div class="metric"><b>36</b><span>Putts</span></div>
+    <div class="metric"><b>1</b><span>Birdie · H17</span></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Tarjeta interactiva</h2>
+  <div class="card-meta"><span>Alborán Golf</span><span>Par 72</span><span>Hándicap 23,4</span><span>100 golpes</span><span>+28</span></div>
+  <div id="scoregrid" class="scoregrid"></div>
+  <div id="detail" class="detail"></div>
+</div>
+
+<div class="two">
+  <div class="section"><h2>Lectura de la vuelta</h2>
+    <div class="note"><b>Balance:</b> una partida con altibajos y sensación de juego pobre, pero sin perder el control en ningún hoyo.</div>
+    <div class="note"><b>Gran cierre competitivo:</b> birdie en el 17 con H9 y putt; seis golpes en el 18 después de recuperar desde un lie complicado.</div>
+    <div class="note"><b>Recuperaciones:</b> el 52° volvió a sostener la tarjeta desde búnker, rough y alrededor de green.</div>
+  </div>
+  <div class="section"><h2>Datos conservados</h2>
+    <div class="note">La tarjeta y los totales están confirmados. Se muestran secuencias completas o parciales en los hoyos donde quedó narración explícita.</div>
+    <div class="note">Los hoyos 7, 8, 9, 15 y 16 mantienen su resultado, pero no se les atribuyen palos que no estén documentados.</div>
+  </div>
+</div>
+
+<div class="footer">ANB Apps · Golf Live · Alborán Golf</div>
+</div>
+<script>
+const holes={
+1:{par:4,score:5,shots:[["Driver","Salida hasta el segundo búnker de calle.","neutral"],["PW","Segundo golpe.","neutral"],["52°","Approach a unos 7 m.","good"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","good"]]},
+2:{par:3,score:7,shots:[["Driver","Mala salida al agua.","bad"],["Driver","Repetición; bola a unos 150 m.","neutral"],["H7","Golpe a la derecha.","bad"],["H9","Al búnker derecho de green.","bad"],["52°","Buena salida de búnker a unos 3 m.","good"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","neutral"]]},
+3:{par:5,score:6,shots:[["Driver","Salida con penalización y dropaje posteriores.","bad"],["Penalización","Dropaje registrado.","bad"],["H7","Golpe de avance.","neutral"],["H7","Segundo golpe con H7.","neutral"],["52°","Approach.","neutral"],["Putter","Putt embocado.","good"]]},
+4:{par:4,score:5,shots:[["Driver","Salida.","neutral"],["H9","Desde unos 135 m; golpe defectuoso por una mata.","bad"],["52°","Desde 40–50 m, a unos 4 m.","good"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","good"]]},
+5:{par:4,score:5,shots:[["Driver","Muy a la izquierda, bajo una adelfa.","bad"],["52°","Escape; avanza solo unos 2 m.","bad"],["52°","Hacia bandera; queda algo largo.","neutral"],["52°","Chip alrededor de green.","good"],["Putter","Putt embocado.","good"]]},
+6:{par:3,score:6,shots:[["Driver","Buena salida, pero termina en agua.","neutral"],["Penalización","Dropaje.","bad"],["52°","Primer golpe tras el drop.","neutral"],["52°","Approach a 2–2,5 m.","good"],["Putter","Putt fallado.","bad"],["Putter","Segundo putt embocado.","good"]]},
+7:{par:4,score:6,shots:[]},8:{par:5,score:6,shots:[]},9:{par:4,score:5,shots:[]},
+10:{par:4,score:5,shots:[["Driver","Salida mala.","bad"],["H9","Muy buen segundo golpe.","good"],["52°","Buen approach a unos 5 m.","good"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","good"]]},
+11:{par:4,score:5,shots:[["Driver","Largo y abierto a la derecha; queda en hierba, sin penalización.","neutral"],["H9","Supera el olivo pese a tocar suelo.","neutral"],["52°","Muy bueno desde unos 80 m, a 4–5 m.","good"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","good"]]},
+12:{par:3,score:5,shots:[["H9","Algo a la izquierda de green.","neutral"],["52°","Caña; no entra en green.","bad"],["52°","Buen golpe a unos 1,5 m.","good"],["Putter","Primer putt fallado.","bad"],["Putter","Segundo putt embocado.","good"]]},
+13:{par:5,score:7,shots:[["Driver","Largo a la derecha, al rough.","neutral"],["H7","Perfecto a calle.","good"],["Golpe 115 m","Mal ejecutado; largo a la izquierda, bajo un pino.","bad"],["52°","Recuperación.","neutral"],["52°","Entrada en green.","neutral"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","neutral"]]},
+14:{par:4,score:6,shots:[["Driver","Muy buen golpe, pero un mal bote lo lleva al agua izquierda.","neutral"],["Penalización","Dropaje.","bad"],["H9","Golpe de seguridad bien ejecutado.","good"],["52°","A green, a unos 7 m.","good"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","good"]]},
+15:{par:4,score:6,shots:[]},16:{par:4,score:7,shots:[]},
+17:{par:3,score:2,shots:[["H9","Buen golpe a green.","good"],["Putter","Putt embocado para birdie.","good"]]},
+18:{par:5,score:6,shots:[["Driver","Salida aceptable.","neutral"],["H5","Segundo golpe; se cierra al rough izquierdo.","bad"],["H8","Desde lie complicado, bola más alta que los pies; queda a la derecha de green.","neutral"],["52°","Buen chip a unos 3 m.","good"],["Putter","Primer putt.","neutral"],["Putter","Segundo putt embocado.","good"]]}
+};
+let selected=1;const grid=document.getElementById('scoregrid');
+function scoreClass(h){const d=h.score-h.par;return d<=-1?'birdie':d===0?'par':d===1?'bogey':d===2?'double':'over'}
+function renderGrid(){grid.innerHTML='';for(let i=1;i<=18;i++){const h=holes[i],b=document.createElement('button');b.className='holebtn'+(i===selected?' active':'');b.onclick=()=>{selected=i;renderGrid();renderDetail()};const cls=scoreClass(h);b.innerHTML=`<div class="n">H${i} · Par ${h.par}</div><div class="s"><span class="shape ${cls}">${cls==='over'?`<em>${h.score}</em>`:h.score}</span></div>`;grid.appendChild(b)}}
+function renderDetail(){const h=holes[selected],d=h.score-h.par,label=d===0?'Par':d>0?`+${d}`:`${d}`;const rows=h.shots.length?h.shots.map((s,i)=>`<div class="shot"><div class="idx">${i+1}</div><div class="club">${s[0]}</div><div class="q-${s[2]}">${s[1]}</div></div>`).join(''):'<div class="empty">Se conserva el resultado de este hoyo, pero no una secuencia de golpes suficientemente fiable.</div>';document.getElementById('detail').innerHTML=`<div class="detailtop"><h3>Hoyo ${selected} · Par ${h.par}</h3><div class="scorepill">${h.score} golpes · ${label}</div></div>${rows}`}
+renderGrid();renderDetail();
+</script>
+</body></html>
