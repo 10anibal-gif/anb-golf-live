@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T19:25:00+02:00",
+  "updatedAt": "2026-08-30T19:22:00+02:00",
   "rounds": [
     {
       "id": "2026-08-29-alboran",
@@ -14,15 +14,21 @@
       "front": 51,
       "back": 49,
       "toPar": 28,
+      "net": 75,
+      "netToPar": 3,
+      "stableford": 34,
       "putts": 36,
+      "penalties": 3,
       "handicap": 23.4,
-      "result": "Birdie en el hoyo 17",
+      "playingHandicap": 25,
+      "position": 3,
+      "result": "100 bruto · 75 neto · +3 · Birdie en el hoyo 17",
       "players": [
+        "Juan Guirado (Chiqui)",
         "Miguel Castro Ariza",
-        "Juan Guirado",
         "Aníbal García"
       ],
-      "summary": "Partida con altibajos: juego irregular, pero sin grandes desastres y con birdie en el hoyo 17.",
+      "summary": "Partida con altibajos y bastantes golpes deficientes, pero sin perder el control. Varias buenas recuperaciones y birdie en el hoyo 17 con H9 desde 135 m y putt de unos 7 m.",
       "path": "2026-08-29/"
     },
     {
