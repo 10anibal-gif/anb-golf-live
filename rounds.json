@@ -1,7 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T20:32:00+02:00",
+  "updatedAt": "2026-08-30T21:19:00+02:00",
   "rounds": [
+    {
+      "id": "2026-08-26-alboran",
+      "date": "2026-08-26",
+      "course": "Alborán Golf",
+      "location": "El Toyo, Almería",
+      "format": "Stableford",
+      "tees": "Amarillas",
+      "par": 72,
+      "score": null,
+      "front": null,
+      "back": null,
+      "stableford": 32,
+      "putts": 33,
+      "handicap": 23.4,
+      "playingHandicap": 25,
+      "position": 2,
+      "result": "32 Stableford · 2.º puesto · Birdie H5",
+      "players": ["Aníbal García"],
+      "summary": "Vuelta de aceptación y proceso: 32 puntos Stableford, birdie en H5, pares en H12 y H17 y 8 puntos en los tres últimos hoyos. H5/H6 quedaron fuera de la estrategia de campo y H9 se confirmó como palo de construcción.",
+      "path": "2026-08-26/"
+    },
     {
       "id": "2026-08-27-alboran",
       "date": "2026-08-27",
