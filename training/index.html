@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#0b1220">
+<title>ANB Golf · Entrenamiento</title>
+<style>
+:root{--bg:#08111d;--panel:#111d2e;--panel2:#17263b;--text:#f5f8fc;--muted:#93a8c2;--line:#28405f;--green:#37d99a;--blue:#6aa8ff;--amber:#ffca64;--red:#ff6f7e}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;min-height:100vh;background:linear-gradient(180deg,#07101c,#0b1727 55%,#08111c);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.wrap{max-width:820px;margin:auto;padding:14px 12px 48px}.hero{padding:18px;border-radius:22px;background:linear-gradient(135deg,#17253c,#0d5c49);border:1px solid #2b4968;box-shadow:0 14px 40px #0005}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#bbcee6}.hero h1{margin:6px 0 4px;font-size:30px}.hero p{margin:0;color:#d4e1ef;font-size:13px;line-height:1.5}.toprow{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.pill{background:#10233a;border:1px solid #315274;color:#eaf3ff;border-radius:999px;padding:8px 11px;font-weight:800;font-size:12px}.section{margin-top:14px;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:14px}.section h2{font-size:17px;margin:0 0 11px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.metric{padding:10px;border-radius:14px;background:#0b1625;border:1px solid #263d5a;text-align:center}.metric b{display:block;font-size:21px}.metric span{display:block;color:var(--muted);font-size:10px;margin-top:2px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.clubs{display:flex;gap:7px;overflow:auto;padding:2px 0 7px;scrollbar-width:none}.clubs::-webkit-scrollbar{display:none}.club{flex:0 0 auto;min-width:58px;border:1px solid #3b5f89;background:#142a45;color:white;border-radius:13px;padding:11px 12px;font-size:14px;font-weight:900}.club.active{background:#2b639a;border-color:#83b9f6;transform:translateY(-1px)}button{font:inherit;cursor:pointer}.windbox{display:grid;grid-template-columns:1fr 1fr;gap:9px}.field{background:#0c1726;border:1px solid #2b4361;border-radius:14px;padding:10px}.field label{display:block;font-size:10px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.08em}.field select,.field input{width:100%;background:#101f32;color:#fff;border:1px solid #365372;border-radius:10px;padding:10px;font-size:14px}.shothead{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-bottom:10px}.clubbig{font-size:28px;font-weight:950}.counter{color:var(--muted);font-weight:700}.shotbuttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}.shot{border:0;border-radius:18px;padding:21px 8px;color:#fff;font-weight:950;font-size:18px;box-shadow:inset 0 0 0 1px #ffffff22}.good{background:#16784f}.left{background:#5a3f91}.right{background:#1f5e9b}.bad{background:#8c3440}.undo{margin-top:9px;width:100%;border:1px solid #3a506b;background:#101c2c;color:#b9cae0;border-radius:13px;padding:10px;font-weight:800}.hint{margin-top:10px;padding:11px 12px;border-radius:13px;background:#0d2131;border-left:4px solid var(--blue);color:#d4e3f4;font-size:12px;line-height:1.45}.tabs{display:flex;gap:7px;overflow:auto;margin-bottom:10px}.tab{border:1px solid #3c5d82;background:#122640;color:#fff;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;white-space:nowrap}.tab.active{background:#285c8e}.panel{display:none}.panel.active{display:block}.list{display:grid;gap:8px}.item{background:var(--panel2);border:1px solid #2c415e;border-radius:14px;padding:11px}.itemtop{display:flex;justify-content:space-between;gap:10px}.item b{font-size:14px}.small{color:var(--muted);font-size:11px;line-height:1.45}.bar{height:8px;border-radius:999px;background:#0a1421;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;background:linear-gradient(90deg,#2d8d67,#4bd69f)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.action{border:1px solid #3a5c82;background:#142944;color:#fff;border-radius:13px;padding:11px;font-weight:900}.danger{border-color:#7f3d48;background:#35171d}.footer{text-align:center;color:#7188a3;font-size:11px;margin-top:17px}.modal{position:fixed;inset:0;background:#000b;display:none;align-items:flex-end;justify-content:center;z-index:20}.modal.show{display:flex}.sheet{width:min(820px,100%);max-height:88vh;overflow:auto;background:#101c2d;border:1px solid #36506f;border-radius:22px 22px 0 0;padding:16px}.sheet h3{margin:0 0 12px}.close{width:100%;margin-top:12px;border:1px solid #3b5778;background:#172942;color:#fff;border-radius:13px;padding:11px;font-weight:900}.tag{display:inline-block;padding:4px 7px;border-radius:999px;background:#0f2338;border:1px solid #304d6e;color:#bfd0e4;font-size:10px;margin:3px 3px 0 0}.empty{color:var(--muted);padding:12px;text-align:center}.status{font-size:12px;font-weight:900}.s-good{color:var(--green)}.s-mid{color:var(--amber)}.s-bad{color:var(--red)}
+@media(max-width:620px){.grid{grid-template-columns:repeat(2,1fr)}.windbox{grid-template-columns:1fr}.hero h1{font-size:27px}.shot{padding:24px 6px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <div class="eyebrow">ANB Apps · Golf Lab</div>
+  <h1>Entrenamiento</h1>
+  <p>Registrar sin romper el ritmo: eliges palo, declaras el viento y cada bola se apunta con un toque.</p>
+  <div class="toprow"><span class="pill" id="sessionPill">Sin sesión activa</span><span class="pill" id="windPill">💨 Sin viento</span></div>
+</header>
+
+<section class="section" id="sessionSetup">
+  <h2>🏁 Sesión</h2>
+  <div class="row">
+    <button class="action" id="newSession">Nueva sesión</button>
+    <button class="action" id="finishSession">Finalizar sesión</button>
+  </div>
+  <div class="hint">Las sesiones quedan guardadas en este dispositivo. Puedes exportar el histórico completo en JSON para conservarlo o moverlo a otro móvil.</div>
+</section>
+
+<section class="section">
+  <h2>🏌️ Palo</h2>
+  <div class="clubs" id="clubs"></div>
+</section>
+
+<section class="section">
+  <h2>💨 Viento</h2>
+  <div class="windbox">
+    <div class="field"><label>Dirección respecto al objetivo</label><select id="windDir"><option value="none">Sin viento</option><option value="head">⬇️ De cara</option><option value="tail">⬆️ A favor</option><option value="left">➡️ De izquierda a derecha</option><option value="right">⬅️ De derecha a izquierda</option><option value="headLeft">↘️ Cara + izq→dcha</option><option value="headRight">↙️ Cara + dcha→izq</option><option value="tailLeft">↗️ Favor + izq→dcha</option><option value="tailRight">↖️ Favor + dcha→izq</option></select></div>
+    <div class="field"><label>Intensidad</label><select id="windStrength"><option value="0">Calma</option><option value="1">Suave</option><option value="2">Moderado</option><option value="3">Fuerte</option></select></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shothead"><div><div class="small">Golpe actual</div><div class="clubbig" id="currentClub">H7</div></div><div class="counter" id="shotCount">0 golpes</div></div>
+  <div class="shotbuttons">
+    <button class="shot left" data-result="left">⬅️ Izquierda</button>
+    <button class="shot good" data-result="good">✅ Buena</button>
+    <button class="shot bad" data-result="bad">❌ Contacto</button>
+    <button class="shot right" data-result="right">Derecha ➡️</button>
+  </div>
+  <button class="undo" id="undo">↩ Deshacer último golpe</button>
+  <div class="hint" id="coachHint">Empieza con series cortas. La app irá separando dispersión propia y desplazamiento probable por viento.</div>
+</section>
+
+<section class="section">
+  <div class="tabs"><button class="tab active" data-tab="today">Sesión</button><button class="tab" data-tab="evolution">Evolución</button><button class="tab" data-tab="history">Histórico</button><button class="tab" data-tab="data">Datos</button></div>
+  <div class="panel active" id="today"><div class="grid" id="sessionMetrics"></div><div class="list" id="clubSession"></div></div>
+  <div class="panel" id="evolution"><div class="list" id="evolutionList"></div></div>
+  <div class="panel" id="history"><div class="list" id="historyList"></div></div>
+  <div class="panel" id="data"><div class="actions"><button class="action" id="exportBtn">⬇ Exportar JSON</button><label class="action" style="text-align:center;cursor:pointer">⬆ Importar JSON<input id="importFile" type="file" accept="application/json" hidden></label><button class="action danger" id="clearBtn">Borrar histórico</button></div><div class="hint">La corrección por viento es deliberadamente conservadora: no “borra” el fallo. Solo marca cuando el viento lateral hace plausible que una dispersión haya sido ayudada por las condiciones.</div></div>
+</section>
+<footer class="footer">ANB Apps · Golf Lab · datos locales</footer>
+</main>
+
+<div class="modal" id="modal"><div class="sheet"><h3 id="modalTitle"></h3><div id="modalBody"></div><button class="close" onclick="modal.classList.remove('show')">Cerrar</button></div></div>
+<script>
+const CLUBS=['Driver','H5','H6','H7','H8','H9','PW','52°'];
+const KEY='anbGolfTrainingV1';
+const $=id=>document.getElementById(id);
+const nowISO=()=>new Date().toISOString();
+const dayLabel=iso=>new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(iso));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let db=loadDB(), currentClub='H7';
+function loadDB(){try{return JSON.parse(localStorage.getItem(KEY))||{sessions:[],activeId:null}}catch{return {sessions:[],activeId:null}}}
+function save(){localStorage.setItem(KEY,JSON.stringify(db));render()}
+function active(){return db.sessions.find(s=>s.id===db.activeId&&!s.endedAt)}
+function newSession(){const old=active();if(old) old.endedAt=nowISO();const id='s'+Date.now();db.sessions.unshift({id,startedAt:nowISO(),endedAt:null,shots:[],note:''});db.activeId=id;save()}
+function finish(){const s=active();if(!s)return;s.endedAt=nowISO();db.activeId=null;save()}
+function addShot(result){let s=active();if(!s){newSession();s=active()}s.shots.push({t:nowISO(),club:currentClub,result,windDir:$('windDir').value,windStrength:+$('windStrength').value});save()}
+function lateralEffect(shot){const d=shot.windDir,k=shot.windStrength;if(!k)return 0;if(['left','headLeft','tailLeft'].includes(d))return k;if(['right','headRight','tailRight'].includes(d))return -k;return 0}
+function corrected(shot){if(shot.result==='bad'||shot.result==='good')return shot.result;const e=lateralEffect(shot);if(shot.result==='right'&&e>=2)return 'wind-assisted';if(shot.result==='left'&&e<=-2)return 'wind-assisted';return shot.result}
+function stats(shots){const n=shots.length,g=shots.filter(x=>x.result==='good').length,b=shots.filter(x=>x.result==='bad').length,l=shots.filter(x=>x.result==='left').length,r=shots.filter(x=>x.result==='right').length,w=shots.filter(x=>corrected(x)==='wind-assisted').length;return{n,g,b,l,r,w,play:n?Math.round((n-b)/n*100):0,good:n?Math.round(g/n*100):0}}
+function renderClubs(){ $('clubs').innerHTML=CLUBS.map(c=>`<button class="club ${c===currentClub?'active':''}" data-club="${c}">${c}</button>`).join('');document.querySelectorAll('.club').forEach(b=>b.onclick=()=>{currentClub=b.dataset.club;render()})}
+function renderWind(){const map={none:'Sin viento',head:'De cara',tail:'A favor',left:'Izq→dcha',right:'Dcha→izq',headLeft:'Cara · izq→dcha',headRight:'Cara · dcha→izq',tailLeft:'Favor · izq→dcha',tailRight:'Favor · dcha→izq'},str=['calma','suave','moderado','fuerte'];$('windPill').textContent='💨 '+map[$('windDir').value]+' · '+str[+$('windStrength').value]}
+function metric(v,l){return `<div class="metric"><b>${v}</b><span>${l}</span></div>`}
+function renderSession(){const s=active();$('sessionPill').textContent=s?'🟢 '+dayLabel(s.startedAt):'Sin sesión activa';const shots=s?.shots||[],st=stats(shots);$('shotCount').textContent=shots.length+' golpes';$('currentClub').textContent=currentClub;$('sessionMetrics').innerHTML=metric(st.n,'Golpes')+metric(st.good+'%','Buenas')+metric(st.play+'%','Contacto jugable')+metric(st.w,'Afectadas por viento');if(!shots.length){$('clubSession').innerHTML='<div class="empty">Todavía no hay golpes en esta sesión.</div>';return}const by={};shots.forEach(x=>(by[x.club]??=[]).push(x));$('clubSession').innerHTML=Object.entries(by).map(([c,a])=>{const x=stats(a);return `<div class="item"><div class="itemtop"><b>${c}</b><span class="status ${x.good>=60?'s-good':x.good>=35?'s-mid':'s-bad'}">${x.good}% buenas</span></div><div class="bar"><i style="width:${x.good}%"></i></div><div class="small">${x.n} bolas · ⬅️ ${x.l} · ✅ ${x.g} · ➡️ ${x.r} · ❌ ${x.b}${x.w?` · 💨 ${x.w} dispersión(es) posiblemente ayudadas por viento`:''}</div></div>`}).join('')}
+function allShots(){return db.sessions.flatMap(s=>s.shots.map(x=>({...x,sessionId:s.id,sessionDate:s.startedAt})))}
+function renderEvolution(){const all=allShots();if(!all.length){$('evolutionList').innerHTML='<div class="empty">Necesitamos varias sesiones para mostrar evolución.</div>';return}const html=CLUBS.map(c=>{const arr=db.sessions.filter(s=>s.shots.some(x=>x.club===c)).slice(0,6).reverse().map(s=>stats(s.shots.filter(x=>x.club===c))).filter(x=>x.n);if(!arr.length)return '';const latest=arr[arr.length-1],first=arr[0],delta=latest.good-first.good;const cls=latest.good>=60?'s-good':latest.good>=35?'s-mid':'s-bad';return `<div class="item"><div class="itemtop"><b>${c}</b><span class="status ${cls}">${latest.good}% · ${delta>0?'+':''}${delta} pts</span></div><div class="bar"><i style="width:${latest.good}%"></i></div><div class="small">Últimas ${arr.length} sesiones con este palo · fiabilidad de contacto ${latest.play}%</div></div>`}).join('');$('evolutionList').innerHTML=html||'<div class="empty">Aún no hay datos suficientes.</div>'}
+function renderHistory(){if(!db.sessions.length){$('historyList').innerHTML='<div class="empty">No hay sesiones guardadas.</div>';return}$('historyList').innerHTML=db.sessions.map(s=>{const x=stats(s.shots);return `<button class="item" style="width:100%;color:inherit;text-align:left" onclick="openSession('${s.id}')"><div class="itemtop"><b>${dayLabel(s.startedAt)}</b><span class="status ${x.good>=60?'s-good':x.good>=35?'s-mid':'s-bad'}">${x.good}% buenas</span></div><div class="small">${x.n} golpes · ${new Set(s.shots.map(a=>a.club)).size} palos · ${s.endedAt?'finalizada':'en curso'}</div></button>`}).join('')}
+window.openSession=id=>{const s=db.sessions.find(x=>x.id===id),by={};s.shots.forEach(x=>(by[x.club]??=[]).push(x));$('modalTitle').textContent='Sesión · '+dayLabel(s.startedAt);$('modalBody').innerHTML=Object.entries(by).map(([c,a])=>{const x=stats(a);return `<div class="item"><div class="itemtop"><b>${c}</b><b>${x.good}% buenas</b></div><div class="small">${x.n} bolas · ⬅️ ${x.l} · ✅ ${x.g} · ➡️ ${x.r} · ❌ ${x.b} · jugables ${x.play}% ${x.w?'· 💨 '+x.w+' con influencia lateral':''}</div></div>`}).join('')||'<div class="empty">Sin golpes.</div>';$('modal').classList.add('show')}
+function coach(){const s=active(),shots=s?.shots.filter(x=>x.club===currentClub)||[];if(shots.length<5){$('coachHint').textContent='Haz una serie de 5 con '+currentClub+'. Solo registra el resultado y vuelve a colocarte.';return}const x=stats(shots.slice(-10));let t='';if(currentClub==='H5'||currentClub==='H6'){t=x.good>=60?'El contacto empieza a ser repetible. Mantén el mismo swing; no busques más distancia.':'Prioridad: contacto. Si encadenas errores, baja un palo y recupera sensación.'}else if(currentClub==='52°'){t=x.l>x.r?'Tendencia izquierda detectada. No fuerces distancia; comprueba alineación y salida de la cara.':'Busca ritmo y distancia controlada; no necesitas apretar el 52°.'}else if(currentClub==='Driver'){t=x.play>=80?'Muy buena fiabilidad. No cambies nada por buscar metros.':'Prioriza bola jugable antes que distancia.'}else{t=x.good>=60?'Serie sólida. Ahora intenta repetir exactamente el mismo vuelo.':'No persigas el fallo. Mantén objetivo y ritmo durante 5 bolas más.'}const w=shots.slice(-10).filter(a=>corrected(a)==='wind-assisted').length;$('coachHint').textContent=t+(w?' El viento lateral probablemente ha influido en '+w+' de las últimas bolas.':'')}
+function render(){renderClubs();renderWind();renderSession();renderEvolution();renderHistory();coach()}
+document.querySelectorAll('.shot').forEach(b=>b.onclick=()=>addShot(b.dataset.result));$('newSession').onclick=newSession;$('finishSession').onclick=finish;$('undo').onclick=()=>{const s=active();if(s?.shots.length){s.shots.pop();save()}};$('windDir').onchange=render;$('windStrength').onchange=render;document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active',x.id===b.dataset.tab))});$('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='anb-golf-training-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};$('importFile').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.sessions))throw Error();db=d;save();alert('Histórico importado correctamente.')}catch{alert('Archivo no válido.')}};r.readAsText(f)};$('clearBtn').onclick=()=>{if(confirm('¿Borrar todas las sesiones de entrenamiento de este dispositivo?')){db={sessions:[],activeId:null};save()}};render();
+</script>
+</body>
+</html>
