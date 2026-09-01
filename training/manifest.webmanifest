@@ -1,0 +1,14 @@
+{
+  "name": "ANB Golf · Entrenamiento",
+  "short_name": "Golf Lab",
+  "description": "Entrenamiento de golf, dispersión, viento y evolución por palo.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07101c",
+  "theme_color": "#0d5c49",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
